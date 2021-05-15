@@ -4,14 +4,14 @@ import React from 'react'
 import Link from 'next/link'
 
 const Home: React.FC = () => 
-<div>
-    <div>Hello Next.js!</div>
-    <h1 className="title">
-        Read{' '}
+    <>
+        <Head>
+            <title>ふらくたるのブログ</title>
+        </Head>
+        <img src="/favi_cafe.png" alt="Your Name" className="logo"/>
         <Link href="/posts/first-post">
             <a>this page!</a>
         </Link>
-    </h1>
-</div>
+    </>
 
 export default Home

@@ -6,9 +6,9 @@ import Link from 'next/link'
 const Home: React.FC = () => 
     <>
         <Head>
-            <title>ふらくたるのブログ</title>
+            <title>ふらくたるのテックブログ</title>
         </Head>
-        <img src="/favi_cafe.png" alt="Your Name" className="logo"/>
+        <img src="/img/favi_cafe.png" alt="Your Name" className="logo"/>
         <Link href="/posts/first-post">
             <a>this page!</a>
         </Link>

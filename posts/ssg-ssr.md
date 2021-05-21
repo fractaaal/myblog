@@ -1,5 +1,5 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: '【Ract&数学】ピタゴラス数生成マシンを作ってみた'
 date: '2020-01-02'
 ---
 

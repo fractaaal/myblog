@@ -4,8 +4,7 @@ import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Post({ postData, title }) {
-    console.log(title)
+export default function Post({ postData }) {
     return (
         <Layout>
             <Head>
@@ -16,9 +15,8 @@ export default function Post({ postData, title }) {
                 <div className={utilStyles.lightText}>
                   <Date dateString={postData.date} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                <p>{postData.fileContents}</p>
             </article>
-            <p>{title}</p>
         </Layout>
     )
 }
@@ -39,6 +37,5 @@ export async function getStaticProps({ params }) {
       }
     }
 }
-
 
 

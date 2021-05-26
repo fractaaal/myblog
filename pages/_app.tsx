@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import 'highlight.js/styles/default.css';
+import "katex/dist/katex.min.css"
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

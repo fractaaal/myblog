@@ -1,0 +1,151 @@
+/* Generated with http://k88hudson.github.io/syntax-highlighting-theme-generator/www */
+/* http://k88hudson.github.io/react-markdocs */
+/**
+ * @author k88hudson
+ *
+ * Based on prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+/*********************************************************
+* General
+*/
+/*
+  [attr*=value]
+  attr という名前の属性の値が、文字列中に value を1つ以上含む要素を表します。
+*/
+pre[class*="with-code"],
+code[class*=""] {
+  color: #ffa646;
+  font-size: 13px;
+  text-shadow: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  line-height: 1.5;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 2;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+/*::selectionのコロン:の色*/
+pre[class*="lwith-code"]::selection,
+code[class*=""]::selection,
+pre[class*="with-code"]::mozselection,
+code[class*=""]::mozselection {
+  text-shadow: none;
+  background: #999999;
+}
+@media print {
+  pre[class*="with-code"],
+  code[class*=""] {
+    text-shadow: none;
+  }
+}
+pre[class*="with-code"] {
+  padding: 1em;
+  margin: .5em 0;
+  overflow: auto;
+  border-radius: .2em;
+  background: #282a5d;
+}
+:not(pre) > code {
+  font-size: 12px;
+  padding: .1em .3em;
+  border-radius: .2em;
+  color: #112d4e;
+  background: #f7fbfc;
+  overflow-wrap: break-word;
+}
+/*********************************************************
+* Tokens
+*/
+.namespace {
+  opacity: .7;
+}
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #626060;
+}
+.token.punctuation {
+  color: #999999;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #b84283;
+}
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #1abec1;
+}
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #b07507;
+  background: #282a5d;
+}
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: #dd4a68;
+}
+.token.function {
+  color: #52abff;
+}
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ee9900;
+}
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+.token.italic {
+  font-style: italic;
+}
+.token.entity {
+  cursor: help;
+}
+/*********************************************************
+* Line highlighting
+*/
+pre[data-line] {
+  position: relative;
+}
+pre[class*="language-"] > code[class*="language-"] {
+  position: relative;
+  z-index: 1;
+}
+.line-highlight {
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: inherit 0;
+  margin-top: 1em;
+  background: #161731;
+  box-shadow: inset 5px 0 0 #6e75f2;
+  z-index: 0;
+  pointer-events: none;
+  line-height: inherit;
+  white-space: pre;
+}

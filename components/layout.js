@@ -13,6 +13,8 @@ const Layout = ({ children, home }) =>(
         <div className={styles.container}>
           <Head>
             <link rel="icon" href="/favicon.ico" />
+            <link rel="stylesheet" href="../components/prism.css"/>
+	          <script type="text/javascript" href="../components/prism.js"></script>
             <meta
               name="description"
               content="Learn how to build a personal website using Next.js"

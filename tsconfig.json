@@ -17,7 +17,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "types": ["node"]//追記
+    "types": ["node"],//追記
+    "declaration": true,
+    "typeRoots" : ["./@types/Content.d.ts"]
   },
   "include": [
     "next-env.d.ts",

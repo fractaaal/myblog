@@ -3,9 +3,8 @@ import Layout from '../../components/layout'
 import { getAllPostIds, getPostData } from '../../lib/posts'
 import Date from '../../components/date'
 import utilStyles from '../../styles/utils.module.css'
-import cheerio from 'cheerio'
-import hljs from 'highlight.js'
-import 'highlight.js/styles/night-owl.css';
+import CodeBlock from "../../components/CodeBlock.js"
+import ReactMarkdown from 'react-markdown'
 
 export default function Post({ postData }) {
     return (
@@ -18,7 +17,8 @@ export default function Post({ postData }) {
                 <div className={utilStyles.lightText}>
                   <Date dateString={postData.date} />
                 </div>
-                <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+                {/* <div dangerouslySetInnerHTML={{ __html: postData.contentHtml}} /> */}
+                <div dangerouslySetInnerHTML={{ __html: postData.itfile}} />
             </article>
         </Layout>
     )

@@ -14,8 +14,8 @@
   [attr*=value]
   attr という名前の属性の値が、文字列中に value を1つ以上含む要素を表します。
 */
-pre[class*="with-code"],
-code[class*=""] {
+pre[class*="language-"],
+code[class*="language-"] {
   color: #ffa646;
   font-size: 13px;
   text-shadow: none;
@@ -35,20 +35,20 @@ code[class*=""] {
   hyphens: none;
 }
 /*::selectionのコロン:の色*/
-pre[class*="lwith-code"]::selection,
-code[class*=""]::selection,
-pre[class*="with-code"]::mozselection,
-code[class*=""]::mozselection {
+pre[class*="language-"]::selection,
+code[class*="language-"]::selection,
+pre[class*="language-"]::mozselection,
+code[class*="language-"]::mozselection {
   text-shadow: none;
   background: #999999;
 }
 @media print {
-  pre[class*="with-code"],
-  code[class*=""] {
+  pre[class*="language-"],
+  code[class*="language-"] {
     text-shadow: none;
   }
 }
-pre[class*="with-code"] {
+pre[class*="language-"] {
   padding: 1em;
   margin: .5em 0;
   overflow: auto;
